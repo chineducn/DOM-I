@@ -60,21 +60,6 @@ featuresLink.textContent = siteContent['nav']['nav-item-4'];
 aboutLink.textContent = siteContent['nav']['nav-item-5'];
 contactLink.textContent = siteContent['nav']['nav-item-6'];
 
-//Stretch start
-navTag.forEach(anchor => anchor.style.color = 'green');
-const goLink = document.createElement('a');
-const buzzLink = document.createElement('a');
-
-goLink.textContent = 'Go Home';
-buzzLink.textContent = 'Buzz Off';
-
-navMain.prepend(goLink);
-navMain.appendChild(buzzLink);
-
-const newNavTag = document.querySelectorAll('header nav a');
-newNavTag.forEach(anchor => anchor.style.color = 'red');
-//Stretch End
-
 const mainHeading = document.querySelector('.cta-text h1');
 const h1Span1 = document.createElement('span');
 const h1Span2 = document.createElement('span');
@@ -142,3 +127,25 @@ emailContact.textContent = siteContent.contact.email;
 
 const copyrightText = document.querySelector('footer p');
 copyrightText.textContent = siteContent.footer.copyright;
+
+//Taskv3 start
+navTag.forEach(anchor => anchor.style.color = 'green');
+const goLink = document.createElement('a');
+const buzzLink = document.createElement('a');
+
+goLink.textContent = 'Go Home';
+buzzLink.textContent = 'Buzz Off';
+
+navMain.prepend(goLink);
+navMain.appendChild(buzzLink);
+
+const newNavTag = document.querySelectorAll('header nav a');
+newNavTag.forEach(anchor => anchor.style.color = 'red');
+//Task 3 End
+
+//Stretch start
+const breakButton = document.createElement('button');
+breakButton.textContent = 'Break it';
+document.querySelector('.cta-text').appendChild(breakButton);
+
+//Stretch end
