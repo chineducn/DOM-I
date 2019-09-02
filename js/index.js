@@ -164,5 +164,7 @@ breakButton.addEventListener('click', (event) => {
   newNavTag.forEach(anchor => anchor.style.color = 'blue');
   newNavTag.forEach(anchor => anchor.textContent = 'Bad idea');
   logo.style.display = 'none';
+  buzzLink.style.color = 'green';
+  buzzLink.textContent = 'Psyche!';
 })
 //Stretch end
