@@ -161,10 +161,16 @@ breakButton.addEventListener('mouseleave', (event) => {
 })
 
 breakButton.addEventListener('click', (event) => {
-  newNavTag.forEach(anchor => anchor.style.color = 'blue');
+  newNavTag.forEach(anchor => {
+    anchor.style.color = 'blue';
+
+  });
   newNavTag.forEach(anchor => anchor.textContent = 'Bad idea');
   logo.style.display = 'none';
   buzzLink.style.color = 'green';
   buzzLink.textContent = 'Psyche!';
+  h1Span1.textContent = 'dom is';
+  h1Span2.textContent = 'da';
+  h1Span3.textContent = 'worst';
 })
 //Stretch end
