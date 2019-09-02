@@ -78,3 +78,29 @@ mainImage.src = siteContent.cta["img-src"];
 
 mainHeading.style.display = 'flex';
 mainHeading.style.flexDirection = 'column';
+
+const contentHeading = document.querySelectorAll('.text-content h4');
+const contentText = document.querySelectorAll('.text-content p');
+const middleImage = document.querySelector('#middle-img');
+const featuresHeading = contentHeading[0];
+const featuresContent = contentText[0];
+const aboutHeading = contentHeading[1];
+const aboutContent = contentText[1];
+const servicesHeading = contentHeading[2];
+const servicesContent = contentText[2];
+const productHeading = contentHeading[3];
+const productContent = contentText[3];
+const visionHeading = contentHeading[4];
+const visionContemt = contentText[4];
+
+featuresHeading.textContent = siteContent['main-content']['features-h4'];
+featuresContent.textContent = siteContent['main-content']['features-content'];
+aboutHeading.textContent = siteContent['main-content']['about-h4'];
+aboutContent.textContent = siteContent['main-content']['about-content'];
+middleImage.src = siteContent['main-content']['middle-img-src'];
+servicesHeading.textContent = siteContent['main-content']['services-h4'];
+servicesContent.textContent = siteContent['main-content']['services-content'];
+productHeading.textContent = siteContent['main-content']['product-h4'];
+productContent.textContent = siteContent['main-content']['product-content'];
+visionHeading.textContent = siteContent['main-content']['vision-h4'];
+visionContemt.textContent = siteContent['main-content']['vision-content'];
