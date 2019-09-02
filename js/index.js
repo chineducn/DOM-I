@@ -60,6 +60,8 @@ featuresLink.textContent = siteContent['nav']['nav-item-4'];
 aboutLink.textContent = siteContent['nav']['nav-item-5'];
 contactLink.textContent = siteContent['nav']['nav-item-6'];
 
+navTag.forEach(anchor => anchor.style.color = 'green');
+
 const mainHeading = document.querySelector('.cta-text h1');
 const h1Span1 = document.createElement('span');
 const h1Span2 = document.createElement('span');
