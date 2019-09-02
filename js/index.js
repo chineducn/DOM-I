@@ -9,9 +9,9 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1-item-1": "DOM",
-    "h1-item-2": "Is",
-    "h1-item-3": "Awesome",
+    "h1-item-1": "DOM ",
+    "h1-item-2": "Is ",
+    "h1-item-3": "Awesome ",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -58,3 +58,23 @@ visionLink.textContent = siteContent['nav']['nav-item-3'];
 featuresLink.textContent = siteContent['nav']['nav-item-4'];
 aboutLink.textContent = siteContent['nav']['nav-item-5'];
 contactLink.textContent = siteContent['nav']['nav-item-6'];
+
+const mainHeading = document.querySelector('.cta-text h1');
+const h1Span1 = document.createElement('span');
+const h1Span2 = document.createElement('span');
+const h1Span3 = document.createElement('span');
+const startButton = document.querySelector('.cta-text button');
+const mainImage = document.querySelector('#cta-img');
+
+mainHeading.appendChild(h1Span1);
+mainHeading.appendChild(h1Span2);
+mainHeading.appendChild(h1Span3);
+
+h1Span1.textContent = siteContent['cta']['h1-item-1'];
+h1Span2.textContent = siteContent['cta']['h1-item-2'];
+h1Span3.textContent = siteContent['cta']['h1-item-3'];
+startButton.textContent = siteContent.cta.button;
+mainImage.src = siteContent.cta["img-src"];
+
+mainHeading.style.display = 'flex';
+mainHeading.style.flexDirection = 'column';
