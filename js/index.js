@@ -30,7 +30,8 @@ const siteContent = {
   },
   "contact": {
     "contact-h4" : "Contact",
-    "address" : "123 Way 456 Street Somewhere, USA",
+    "address-item-1" : "123 Way 456 Street",
+    "address-item-2" : "Somewhere, Usa",
     "phone" : "1 (888) 888-8888",
     "email" : "sales@greatidea.io",
   },
@@ -104,3 +105,25 @@ productHeading.textContent = siteContent['main-content']['product-h4'];
 productContent.textContent = siteContent['main-content']['product-content'];
 visionHeading.textContent = siteContent['main-content']['vision-h4'];
 visionContemt.textContent = siteContent['main-content']['vision-content'];
+
+const contactHeading = document.querySelector('.contact h4');
+const contactParagraph = document.querySelectorAll('.contact p');
+const addressContact = contactParagraph[0];
+const addressLineOne = document.createElement('span');
+const addressLineBreak = document.createElement('br');
+const addressLineTwo = document.createElement('span');
+const phoneContact = contactParagraph[1];
+const emailContact = contactParagraph[2];
+
+addressContact.appendChild(addressLineOne);
+addressContact.appendChild(addressLineBreak);
+addressContact.appendChild(addressLineTwo)
+
+contactHeading.textContent = siteContent.contact['contact-h4'];
+addressLineOne.textContent = siteContent.contact['address-item-1'];
+addressLineTwo.textContent = siteContent.contact['address-item-2'];
+phoneContact.textContent = siteContent.contact.phone;
+emailContact.textContent = siteContent.contact.email;
+
+const copyrightText = document.querySelector('footer p');
+copyrightText.textContent = siteContent.footer.copyright;
