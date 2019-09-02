@@ -9,7 +9,9 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1-item-1": "DOM",
+    "h1-item-2": "Is",
+    "h1-item-3": "Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -49,3 +51,10 @@ const visionLink = navTag[2];
 const featuresLink = navTag[3];
 const aboutLink = navTag[4];
 const contactLink = navTag[5];
+
+servicesLink.textContent = siteContent['nav']['nav-item-1'];
+productLink.textContent = siteContent['nav']['nav-item-2'];
+visionLink.textContent = siteContent['nav']['nav-item-3'];
+featuresLink.textContent = siteContent['nav']['nav-item-4'];
+aboutLink.textContent = siteContent['nav']['nav-item-5'];
+contactLink.textContent = siteContent['nav']['nav-item-6'];
