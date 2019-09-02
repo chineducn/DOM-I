@@ -148,4 +148,21 @@ const breakButton = document.createElement('button');
 breakButton.textContent = 'Break it';
 document.querySelector('.cta-text').appendChild(breakButton);
 
+breakButton.addEventListener('mouseenter', (event) => {
+  event.target.textContent = 'Just Do it';
+  startButton.textContent = 'Bad idea';
+  event.stopPropagation();
+})
+
+breakButton.addEventListener('mouseleave', (event) => {
+  event.target.textContent = 'Break it';
+  startButton.textContent = siteContent.cta.button;
+  event.stopPropagation();
+})
+
+breakButton.addEventListener('click', (event) => {
+  newNavTag.forEach(anchor => anchor.style.color = 'blue');
+  newNavTag.forEach(anchor => anchor.textContent = 'Bad idea');
+  logo.style.display = 'none';
+})
 //Stretch end
